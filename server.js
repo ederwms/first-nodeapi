@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 //* criando o DB ->  connect('protocolo://endereco/schema utilizado', { options (OPCIONAL!) })
-mongoose.connect('mongodb+srv://deploy:nodeapi@cluster0-71tmj.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://deploy:nodeapi@cluster0-71tmj.mongodb.net/node-api?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 
 //* importa a model criada: Product
 require('./src/models/Product')
