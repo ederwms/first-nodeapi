@@ -9,7 +9,7 @@ app.use(express.json())
 //* adicionando cors ao server
 app.use(cors())
 
-//* criando o DB -> connect('protocolo://endereco/schema utilizado', { options (OPCIONAL!) })
+//* criando o DB ->  connect('protocolo://endereco/schema utilizado', { options (OPCIONAL!) })
 mongoose.connect('mongodb+srv://deploy:nodeapi@cluster0-71tmj.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 
 //* importa a model criada: Product
