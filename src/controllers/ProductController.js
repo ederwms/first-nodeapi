@@ -18,7 +18,7 @@ module.exports = {
     return res.json(product)
   },
   async update(req, res) {
-    //* new: true diz para o mongoose retornar o produto já atualizado
+    //* "new: true" diz para o mongoose retornar o produto já atualizado
     const product = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true })
     return res.json(product)
   },
