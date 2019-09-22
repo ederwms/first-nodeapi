@@ -1,6 +1,7 @@
 const express  = require('express') //* importa express
 const mongoose = require('mongoose') //* importa mongoose
 const cors     = require('cors') //* importa cors
+require('dotenv').config();
 
 //* inicializa o app
 const app = express()
